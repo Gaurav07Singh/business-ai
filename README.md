@@ -1,36 +1,83 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# GrowthAI - Business Growth Platform
+
+A modern, AI-powered platform that helps businesses grow through personalized recommendations and strategies.
+
+## Features
+
+- **Beautiful Landing Page** - Modern, visually appealing design with smooth animations
+- **Service Selection** - Choose from multiple business services:
+  - Professional Email Setup
+  - Lead Generation Strategy
+  - Marketing Campaign Planning
+- **Interactive Quiz** - 10-12 question questionnaire for each service
+- **AI-Powered Recommendations** - Get personalized insights using Google's Gemini AI
+- **Modern UI/UX** - Built with React, Next.js, Tailwind CSS, and Framer Motion
+
+## Color Theme
+
+The application uses a custom color palette:
+- Primary Blue: `#1E40AF`
+- Primary Purple: `#753AED`
+- Primary Orange: `#F5900B`
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
+
+- Node.js 18+ installed
+- npm or yarn package manager
+
+### Installation
+
+1. Install dependencies:
+
+```bash
+npm install
+```
+
+2. Run the development server:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+3. Open [http://localhost:3000](http://localhost:3000) in your browser
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Project Structure
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```
+business-ai/
+├── app/
+│   ├── components/
+│   │   ├── LandingPage.tsx      # Main landing page
+│   │   ├── ProductsSection.tsx  # Service selection page
+│   │   └── QuizInterface.tsx    # Quiz and AI response page
+│   ├── utils/
+│   │   └── gemini.ts            # Google Gemini AI integration
+│   ├── globals.css              # Global styles
+│   ├── layout.tsx               # Root layout
+│   └── page.tsx                 # Main app component
+├── public/                      # Static assets
+└── package.json                 # Dependencies
+```
 
-## Learn More
+## Technologies Used
 
-To learn more about Next.js, take a look at the following resources:
+- **Next.js 16** - React framework
+- **TypeScript** - Type safety
+- **Tailwind CSS** - Styling
+- **Framer Motion** - Animations
+- **Lucide React** - Icons
+- **Google Generative AI** - AI-powered recommendations
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## How It Works
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+1. **Landing Page** - Users are greeted with a modern landing page
+2. **Get Started** - Click the "Get Started" button to view services
+3. **Select Service** - Choose from Professional Email, Lead Generation, or Marketing Campaign Planner
+4. **Complete Quiz** - Answer 10-12 questions about your business
+5. **Get AI Recommendations** - Receive personalized, AI-generated recommendations based on your answers
 
-## Deploy on Vercel
+## License
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+MIT
